@@ -1138,7 +1138,7 @@
   }
 
   .e-pv-thumbnail-row {
-    -ms-flex-wrap: $pv-thumbnail-row-flex-wrap; // IE10    
+    -ms-flex-wrap: $pv-thumbnail-row-flex-wrap; // IE10
     display: $pv-thumbnail-row-display;
     flex-wrap: $pv-thumbnail-row-flex-wrap;
   }
@@ -4108,5 +4108,37 @@
       padding: 0 6px;
       width: 28px;
     }
+  }
+
+  $position-offset: 3px;
+
+  .FormField_helper_guide {
+    @apply block absolute bg-red-500 -z-10;
+  }
+
+  .FormField_helper_guide_vertical {
+    @apply w-px h-screen;
+    left: $position-offset;
+  }
+
+  #FormField_helper_guide_vertical_top_bottom_html_element {
+    top: $position-offset;
+  }
+
+  #FormField_helper_guide_vertical_bottom_top_html_element {
+    bottom: $position-offset;
+  }
+
+  .FormField_helper_guide_horizontal {
+    @apply h-px w-screen;
+    top: $position-offset;
+  }
+
+  #FormField_helper_guide_horizontal_left_right_html_element {
+    left: $position-offset;
+  }
+
+  #FormField_helper_guide_horizontal_right_left_html_element {
+    right: $position-offset;
   }
 }
